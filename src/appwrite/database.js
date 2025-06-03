@@ -56,10 +56,10 @@ export class Service {
         config.appWriteCollectionId,
         slug
       );
-      return true;
+      
     } catch (error) {
       throw e;
-      return false;
+      
     }
   }
   async getPost(slug) {
