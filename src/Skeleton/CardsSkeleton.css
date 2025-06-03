@@ -1,0 +1,19 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card-skeleton {
+  height: 200px; /* 280 / 1.25 */
+  width: 256px; /* 320 / 1.25 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+.img-skeleton {
+  margin-top: 12px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,44 @@
+.header {
+  height: 70px;
+  width: 100%;
+  background-color: #e8edff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-div {
+  margin: 0px 15px;
+}
+.without-login-links {
+  width: 270px;
+  margin-right: 40px;
+}
+.login-links {
+  width: 300px;
+}
+.links {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.links .NavLink {
+  font-weight: 500;
+  text-decoration: none;
+  border: 2px solid transparent;
+  color: #656565;
+  font-size: 17px;
+  padding: 5px 10px;
+  background: none;
+  transition: 0.5s ease-in-out;
+}
+
+.logout-btn-div {
+  margin-right: 30px;
+}
+.active {
+  transition: 0.3s ease-in-out;
+
+  border-bottom: 2px solid #007bff !important;
+  color: #007bff !important;
+}

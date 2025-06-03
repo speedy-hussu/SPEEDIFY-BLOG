@@ -1,0 +1,14 @@
+.logout-btn {
+  font-weight: 500;
+  height: 40px;
+  width: 80px;
+  font-size: 16px;
+  border-radius: 65% 33% 46% 54% / 49% 29% 71% 51%;
+  background-color: #007bff;
+  transition: 0.4s ease-in-out;
+  color: #fff;
+}
+.logout-btn:hover {
+  background-color: #656565;
+  border-radius: 23% 59% 28% 40% / 35% 66% 33% 65%;
+}

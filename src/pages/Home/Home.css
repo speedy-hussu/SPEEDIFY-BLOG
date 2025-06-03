@@ -1,0 +1,29 @@
+.home-div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0px;
+}
+.login-alert-div {
+  height: calc(100dvh - 120px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-alert {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  background-color: #e8edff;
+  border-radius: 57% 43% 63% 37% / 51% 59% 41% 49%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-alert h1 {
+  font-size: 25px;
+  color: #656565;
+  font-weight: 600;
+}

@@ -1,0 +1,28 @@
+.input-div {
+  height: 30px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.label-div {
+  color: #252525;
+  height: 100%;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-div input {
+  background-color: transparent;
+  width: 250px;
+  font-size: 16px;
+  height: 100%;
+  padding: 0px 10px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  transition: border 0.3s ease-in-out;
+}
+.input-div input:focus {
+  box-shadow: 0px 0px 5px #007bff70;
+}

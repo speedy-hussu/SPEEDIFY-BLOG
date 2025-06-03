@@ -1,0 +1,40 @@
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #e8edff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foo-author-name {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #656565;
+}
+.foo-links {
+  width: 500px;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.foo-link {
+  color: #656565;
+  font-size: 17px;
+  height: 70%;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}
+.linkedin {
+  width: 110px;
+}
+.foo-link:hover {
+  color: #007bff;
+}

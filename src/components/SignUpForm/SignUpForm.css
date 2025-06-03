@@ -1,0 +1,27 @@
+.sign-up-form {
+  padding: 10px 20px;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #e8edff;
+}
+.sign-up-form h2 {
+  text-align: center;
+  color: #252525;
+}
+.sign-up-inputs-div {
+  height: 150px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.sign-up-btn-div {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

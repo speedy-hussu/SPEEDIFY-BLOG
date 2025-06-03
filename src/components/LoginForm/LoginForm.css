@@ -1,0 +1,34 @@
+
+.login-form {
+  padding: 10px 20px;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #e8edff;
+}
+.login-form h2 {
+  text-align: center;
+  color: #252525;
+}
+.login-inputs-div {
+  height: 100px;
+  width: 300px;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.signup-navigator {
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+}
+.login-btn-div {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

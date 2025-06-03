@@ -1,0 +1,7 @@
+.sign-up-page-wrapper {
+  width: 100%;
+  height: calc(100dvh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

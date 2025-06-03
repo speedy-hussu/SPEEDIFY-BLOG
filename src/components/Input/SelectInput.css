@@ -1,0 +1,27 @@
+.select-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  width: 200px;
+}
+
+.select-label {
+  margin-bottom: 0.3rem;
+  color: #252525;
+}
+
+.select-element {
+  padding: 3px 10px;
+  font-size: 1rem;
+  border: 1px solid #656565;
+  border-radius: 4px;
+  width: 130px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  transition: 0.3s ease;
+}
+.select-element:focus {
+  box-shadow: 0px 0px 5px #007bff70;
+}
