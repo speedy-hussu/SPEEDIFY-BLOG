@@ -5,6 +5,6 @@ const config = {
 
   appWriteCollectionId: String(import.meta.env.VITE_APPWRITE_COLLECTION_ID),
   appWriteBucketId: String(import.meta.env.VITE_APPWRITE_BUCKET_ID),
-  tinyApikey: String(import.meta.env.VITE_TINY_APIKEY),
+  tinyApiKey: String(import.meta.env.VITE_TINY_APIKEY),
 };
 export default config;

@@ -48,8 +48,8 @@ function PostForm({ post }) {
           const fileId = file.$id;
           data.image = fileId;
           const dbPost = await appwriteService.createPost({
-            ...data,
             userId: userData.$id,
+            ...data,
           });
 
           if (dbPost) {
@@ -63,13 +63,19 @@ function PostForm({ post }) {
   };
 
   const slugTransform = useCallback((value) => {
-    if (value && typeof value === "string")
-      return value
-        .trim()
-        .toLowerCase()
-        .replace(/[^a-zA-Z\d\s]+/g, "-")
-        .replace(/\s/g, "-");
-
+    if (value && typeof value === "string") {
+      return (
+        value
+          .trim()
+          .toLowerCase()
+          // Remove all chars except letters, numbers, and spaces
+          .replace(/[^a-z0-9\s]+/g, "")
+          // Replace spaces (one or more) with single hyphen
+          .replace(/\s+/g, "-")
+          // Remove leading or trailing hyphens
+          .replace(/^-+|-+$/g, "")
+      );
+    }
     return "";
   }, []);
 

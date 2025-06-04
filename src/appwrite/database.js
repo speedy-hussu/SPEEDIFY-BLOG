@@ -13,12 +13,12 @@ export class Service {
     this.bucket = new Storage(this.client);
   }
 
-  async createPost({ title, slug, content, image, status, userId }) {
+  async createPost({ title, content, image, status, userId }) {
     try {
       return await this.databases.createDocument(
         config.appWriteDatabaseId,
         config.appWriteCollectionId,
-        slug,
+        ID.unique(),
         {
           title,
           content,
@@ -28,15 +28,15 @@ export class Service {
         }
       );
     } catch (error) {
-      throw reportError;
+      console.log(error);
     }
   }
-  async updatePost(slug, { title, content, image, status, userId }) {
+  async updatePost(DocId, { title, content, image, status, userId }) {
     try {
       return await this.databases.updateDocument(
         config.appWriteDatabaseId,
         config.appWriteCollectionId,
-        slug,
+        DocId,
         {
           title,
           content,
@@ -49,25 +49,23 @@ export class Service {
       throw error;
     }
   }
-  async deletePost(slug) {
+  async deletePost(DocId) {
     try {
       return await this.databases.deleteDocument(
         config.appWriteDatabaseId,
         config.appWriteCollectionId,
-        slug
+        DocId
       );
-      
     } catch (error) {
       throw e;
-      
     }
   }
-  async getPost(slug) {
+  async getPost(DocId) {
     try {
       return await this.databases.getDocument(
         config.appWriteDatabaseId,
         config.appWriteCollectionId,
-        slug
+        DocId
       );
     } catch (error) {
       throw error;

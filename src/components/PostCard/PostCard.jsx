@@ -16,6 +16,7 @@ function PostCard({ $id, title, image }) {
       <div className="card-title-div">
         <h2>{title.length > 20 ? title.slice(0, 30) + "..." : title}</h2>
       </div>
+      <p>{}</p>
     </Link>
   );
 }

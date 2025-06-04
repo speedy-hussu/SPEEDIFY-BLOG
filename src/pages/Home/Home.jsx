@@ -12,6 +12,7 @@ function Home() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const currentUser = useSelector((state) => state.auth.userData);
+  console.log(currentUser);
   async function getAllPosts() {
     try {
       if (currentUser) {
@@ -27,8 +28,13 @@ function Home() {
   }
 
   useEffect(() => {
-    getAllPosts();
-  }, []);
+    if (currentUser) {
+      getAllPosts();
+    } else {
+      setLoading(false); // <- this is needed so login illustration can show
+    }
+  }, [currentUser]);
+
   if (loading) {
     if (currentUser) {
       return (
