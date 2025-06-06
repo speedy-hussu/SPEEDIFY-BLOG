@@ -18,8 +18,8 @@ function EditPost() {
     try {
       if (slug) getPostData();
       else navigate("/");
-    } catch (error) {
-      console.log(error);
+    } catch (e) {
+      console.log(e);
     }
   }, [navigate, slug]);
   if (loading) return <p>Loading</p>;
